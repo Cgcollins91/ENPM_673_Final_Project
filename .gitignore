@@ -2,4 +2,6 @@ archive/
 build/
 install/
 log/
-detector/
+/detector/
+
+!src/detector/

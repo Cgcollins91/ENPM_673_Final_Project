@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>detector</name>
+  <version>0.0.1</version>
+  <description>Jetracer </description>
+
+  <maintainer email="Chris.g.collins1991@gmail.com">Chris Collins</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- runtime -->
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>   <!-- ubuntu package name -->
+
+  <!-- export tag can stay empty -->
+  <export/>
+</package>
