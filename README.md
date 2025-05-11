@@ -1,8 +1,6 @@
 Chris Collins, UID 110697305
 
-ENPM 673 Perception for Autonomous Robots Final Project 
-
-In this project a Waveshare JetRacer Mobile Robot was used to:
+ENPM 673 Perception for Autonomous Robots Final Project, A Waveshare JetRacer Mobile Robot was used to:
 ------------
 1. Autonomously navigate a course defined by pieces of paper with aruco tags by
   - Detecting Aruco Tags with camera feed and determining their pose relative to Jetracer's camera frame
