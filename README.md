@@ -28,7 +28,7 @@ For test run the following steps were performed:
 - ./run_detector.bash  
 - ./run_optical_flow_dense.bash
 - ./run_vanishing.bash
-3.Finally Run  ./run_course.bash    (also in seperate terminal, this will command robot movement)
+3. Finally Run  ./run_course.bash    (also in seperate terminal, this will command robot movement)
 
 The code base consists of 4 major files:
 - src/detector/detector/aruco_pid.py             --> PID Control
