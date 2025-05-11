@@ -129,13 +129,13 @@ PID Control to command robot to move towards detected aruco tag
 
   See ArucoDualPID class docstring
 
-  Topics
-  ------
-  • **Subscribes**
-      ├─ /aruco_detections       PoseStamped   Pose of detected Aruco tag
-      ├─ /brake_flag            Bool          Flag to stop robot
-  • **Publishes**
-      ├─ /cmd_vel               Twist         Robot velocity command
+    Topics
+    ------
+    • **Subscribes**
+        ├─ /aruco_detections       PoseStamped   Pose of detected Aruco tag
+        ├─ /brake_flag            Bool          Flag to stop robot
+    • **Publishes**
+        ├─ /cmd_vel               Twist         Robot velocity command
 
 
 Referenced: Tommy Chang and Samer Charifa Lecture Notes, openCV documentation
@@ -148,14 +148,14 @@ detect_aruco.py
 
   See ArucoDetector class docstring
 
-  Topics
-  ------
-  • **Subscribes**
-    ├─ /csi_cam_0/image_raw    Image, BGR   Raw Camera Feed
-  • **Publishes**
-      ├─ /aruco_detections       PoseStamped   Pose of detected Aruco tag
+    Topics
+    ------
+    • **Subscribes**
+      ├─ /csi_cam_0/image_raw    Image, BGR   Raw Camera Feed
+    • **Publishes**
+        ├─ /aruco_detections       PoseStamped   Pose of detected Aruco tag
 
-  Referenced: Tommy Chang and Samer Charifa Lecture Notes, openCV documentation
+    Referenced: Tommy Chang and Samer Charifa Lecture Notes, openCV documentation
 
 
 
