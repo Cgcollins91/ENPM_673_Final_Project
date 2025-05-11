@@ -3,7 +3,7 @@ Chris Collins, UID 110697305
 ENPM 673 Perception for Autonomous Robots Final Project, A Waveshare JetRacer Mobile Robot was used to:
 ------------
 1. Autonomously navigate a course defined by pieces of paper with aruco tags by
-  - Detecting Aruco Tags with camera feed and determining their pose relative to Jetracer's camera frame
+  - Detecting Aruco Tags with camera feed and determine their pose relative to Jetracer's camera frame
   - Send PID control using distance/heading error between robot pose and aruco pose
 2. Detect Stop Sign with camera feed and stop once detected
 3. Detect dynamic obstacle in front of the camera and stop if detected
@@ -14,7 +14,7 @@ ENPM 673 Perception for Autonomous Robots Final Project, A Waveshare JetRacer Mo
 Video of my console for test run (On a Linux VM):
 https://www.dropbox.com/scl/fi/pbdnabxqzh8mnblatljcx/Chris_Collins_ENPM_673_Final_Project_Console_View.mp4?rlkey=bu22osijhsr5021aig0rnqxge&st=lxdtldzn&dl=0
 
-Video of robot performing run (without dynamic obstacle):
+Video of Jetracer performing run (without dynamic obstacle):
 https://www.dropbox.com/scl/fi/c7b4ur48rfxhcs7nv7c3s/Chris_Collins_ENPM_673_Final_Project_View_of_Robot.mp4?rlkey=lhdcmpmqtyejqa6xkip9jhgd2&st=ph2ddqag&dl=0
 
 
