@@ -7,7 +7,7 @@ ENPM 673 Perception for Autonomous Robots Final Project, A Waveshare JetRacer Mo
   - Send PID control using distance/heading error between robot pose and aruco pose
 2. Detect Stop Sign with camera feed and stop once detected
 3. Detect dynamic obstacle in front of the camera and stop if detected
-4. Calculate the Vanishing Point of the camera image and overlay it
+4. Calculate Vanishing Point of camera image and overlay
 
 ![Screenshot 2025-05-11 at 15-25-55 JetRacer AI Kit AI Racing Robot Powered by Jetson Nano](https://github.com/user-attachments/assets/aa5daddd-c872-45ec-ae7b-1fcc65728f55)
 
@@ -155,6 +155,11 @@ detect_aruco.py
 
     Referenced: Tommy Chang and Samer Charifa Lecture Notes, openCV documentation
 
+Future Work
+----------
+- In the console video, a False positive for dynamic obstacle is seen shortly after encountering a real dynamic obstacle, this could be made more robust either through different methodology or improved tuning
+- I suspect my means of detecting a stop sign is overfitting to the specific color of the stop sign I used and this could be made more robust for real world situations 
+- Vanishing Point is noisy and I ran out of time to make really robust, further analysis/experimentation required to make more robust and useful for solving control/CV problem
 
 
 Notes:
