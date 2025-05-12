@@ -28,18 +28,19 @@ Installation
 
 Test Run Steps:
 -----------
-1. Turn on Jetracer, place robot in front of course then start ros core, chassis, and camera node  with these commands on the Jetson Nano:
-  - roscore                              # Start the robot master node
-  - roslaunch jetracer jetracer.launch   # Start the robot chassis node
-  - roslaunch jetracer csi_camera.launch # Start Camera
+1. Turn on Jetracer, place robot in front of course then start ros core, chassis, and camera node  with these commands within a terminal on the Jetson Nano:
+  - "roscore"                              # Start the robot master node
+  - "roslaunch jetracer jetracer.launch"   # Start the robot chassis node
+  - "roslaunch jetracer csi_camera.launch" # Start Camera
   - On Linux VM to see camera and optical_flow/stop_sign/vanishing_point debug images:      rosrun rqt_image_view rqt_image_view
-2. From my Linux VM, first open multiple rqt_image_viewers (Command Above), then run the below commands in seperate terminals:
+2. From Linux VM, first open multiple rqt_image_viewers (Command Above), then run below commands in seperate terminals:
 - ./run_detector.bash  
 - ./run_optical_flow_dense.bash
 - ./run_vanishing.bash
 3. Finally Run  ./run_course.bash    (also in seperate terminal, this will command robot movement)
 
-The code base consists of 4 major files:
+Code base:
+---------
 - src/detector/detector/aruco_pid.py             --> PID Control
 - src/detector/detector/detect_aruco.py          --> Detect Aruco Tags and publish their pose
 - src/detector/detector/optical_flow_dense.py    --> Detect Dynamic Obstacle and Stop Sign and publish command to brake robot for 3 seconds if detected
@@ -69,8 +70,8 @@ optical_flow_dense.py
       
       Coordinate frames
       -----------------
-      Camera Frame  : Camera intrinsics (``FX,FY,CX,CY``) from project-3 calib, translated by [0.09m, 0, 0.09m] from base_link (odom_frame)
-      Odom Frame    : Taken from /odom; delta pose used to scale translation
+      Camera Frame  : Camera Calibration Matrix from project 3 (Camera Calibration performed on 30 images of calibration board), translated by [0.09m, 0, 0.09m] from base_link (odom_frame)
+      Odom Frame    : Taken from /odom; delta pose used to scale translation 
 
       Main Callback
       -----------------
