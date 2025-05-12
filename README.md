@@ -18,6 +18,10 @@ Video of Jetracer performing run (without dynamic obstacle):
 https://www.dropbox.com/scl/fi/c7b4ur48rfxhcs7nv7c3s/Chris_Collins_ENPM_673_Final_Project_View_of_Robot.mp4?rlkey=lhdcmpmqtyejqa6xkip9jhgd2&st=ph2ddqag&dl=0
 
 
+Installation
+------------
+- run colcon build at top level of repo after cloning
+
 For test run the following steps were performed:
 1. Turn on Jetracer, place robot in front of course then start ros core, chassis, and camera node  with these commands on the Jetson Nano:
   - roscore                              # Start the robot master node
