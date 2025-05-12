@@ -22,7 +22,8 @@ Installation
 ------------
 - run "colcon build" at top level of repo after cloning in terminal
 
-For test run the following steps were performed:
+
+Test Run Steps:
 -----------
 1. Turn on Jetracer, place robot in front of course then start ros core, chassis, and camera node  with these commands on the Jetson Nano:
   - roscore                              # Start the robot master node
@@ -147,7 +148,7 @@ detect_aruco.py
 ---------------
  Detect Aruco tags with camera and publish their pose relative to camera 
 
- Assumes intrinsic camera calibration is known and can be provided in CALIB_FILE (For this project leveraged ENPM 673 Project 3 camera calibration)
+ **Assumes intrinsic camera calibration is known and can be provided in CALIB_FILE (For this project leveraged ENPM 673 Project 3 camera calibration)**
 
   See ArucoDetector class docstring
 
