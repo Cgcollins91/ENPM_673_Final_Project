@@ -20,9 +20,10 @@ https://www.dropbox.com/scl/fi/c7b4ur48rfxhcs7nv7c3s/Chris_Collins_ENPM_673_Fina
 
 Installation
 ------------
-- run colcon build at top level of repo after cloning
+- run "colcon build" at top level of repo after cloning in terminal
 
 For test run the following steps were performed:
+-----------
 1. Turn on Jetracer, place robot in front of course then start ros core, chassis, and camera node  with these commands on the Jetson Nano:
   - roscore                              # Start the robot master node
   - roslaunch jetracer jetracer.launch   # Start the robot chassis node
