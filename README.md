@@ -29,9 +29,9 @@ Installation
 Test Run Steps:
 -----------
 1. Turn on Jetracer, place robot in front of course then start ros core, chassis, and camera node  with these commands within a terminal on the Jetson Nano:
-  - "roscore"                              # Start the robot master node
-  - "roslaunch jetracer jetracer.launch"   # Start the robot chassis node
-  - "roslaunch jetracer csi_camera.launch" # Start Camera
+  - roscore                              # Start the robot master node
+  - roslaunch jetracer jetracer.launch   # Start the robot chassis node
+  - roslaunch jetracer csi_camera.launch # Start Camera
   - On Linux VM to see camera and optical_flow/stop_sign/vanishing_point debug images:      rosrun rqt_image_view rqt_image_view
 2. From Linux VM, first open multiple rqt_image_viewers (Command Above), then run below commands in seperate terminals:
 - ./run_detector.bash  
